@@ -6,10 +6,21 @@ const ImageScreen = () => {
   return (
     <View>
       <Text style={styles.text}>This is the image screen</Text>
-      <ImageDetail title="Forest" />
-      <ImageDetail title="Mountain" />
-      <ImageDetail title="Lake" />
-      <ImageDetail title="Country" />
+      <ImageDetail
+        title="Beach"
+        imageSource={require("../../assets/beach.jpg")}
+        imageScore={9}
+      />
+      <ImageDetail
+        title="Forest"
+        imageSource={require("../../assets/forest.jpg")}
+        imageScore={9}
+      />
+      <ImageDetail
+        title="Mountain"
+        imageSource={require("../../assets/mountain.jpg")}
+        imageScore={9}
+      />
     </View>
   );
 };
